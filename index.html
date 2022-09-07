@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <img class="logo" src="./images/logo.svg" alt="">
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <section class="encriptador">
+                <form class="formulario">
+                    <div class="texto_en_area">
+                        <textarea name="texto" id="text" placeholder="Ingrese el texto aqui..."></textarea>
+                        <div class="texto_info">
+                          <div class="info">
+                            <img src="./images/exclamation-circle.svg"/>
+                            <p id="advertencia">Solo letras minúsculas</p>
+                          </div>
+                        </div>
+          
+                        <div class="btn">
+                          <button id="left_button" class="btn_encriptar" type="button">
+                            <img src="./images/logo-encript.svg"/> Encriptar
+                          </button>
+                          <button id="right_button" class="btn_desencriptar" type="button">
+                            <img src="./images/logo-desencript.svg"/> Desencriptar
+                          </button>
+                        </div>
+                      </div>
+                </form>
+                <div class="areaEncriptacion">
+                    <div class="contenedorEncript">
+                        <div class="noEncriptado" id="noEncriptado">
+                            <div class="logoEncriptado">
+                                <img src="./images/Encryption.jpeg" alt="">
+                            </div>
+                            <p>Ningún mensaje fue encontrado</p>
+                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                        <div class="encriptado" id="encriptado">
+                            <textarea name="textEncript" id="textEncript" cols="30" rows="10" disabled></textarea>
+                            <button id="copy" type="button">
+                                <img src="./images/logo-copia.svg"> Copiar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main> 
+    <footer>
+        <p class="textFooter">
+            © Realizado por
+            <a href="https://github.com/CristianT2" target="_blank" rel="noopener noreferrer">
+                Cristian Torrejón
+            </a>
+          </p>
+    </footer>  
+
+    <script src="main.js"></script>
+</body>
+</html>
