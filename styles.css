@@ -209,6 +209,7 @@ body {
     resize: none;
     border: none;
     background: transparent;
+    font-size: 20px;
 }
 .encriptado button {
     position: absolute;
